@@ -1,5 +1,5 @@
 {
-  "name": "@Gopi-saravanan/npm-rpg",
+  "name": "@Gopi-saravanan/gs-random-password-generate",
   "version": "1.0.0",
   "description": "Generate random password ",
   "main": "index.js",
@@ -9,6 +9,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gopi-saravanan/npm-rpg.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/Gopi-saravanan"
   },
   "keywords": [
     "generate",
