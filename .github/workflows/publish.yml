@@ -16,7 +16,7 @@ jobs:
           node-version: '20.x'
 
       - name: Authenticate with GitHub NPM package repository
-        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.PUBLISH_NPM_TOKEN }}" >> ~/.npmrc
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.PUBLISH_GITHUB_TOKEN }}" >> ~/.npmrc
 
       - name: Publish to GitHub
         run: npm publish
