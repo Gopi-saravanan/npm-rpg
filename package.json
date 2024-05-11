@@ -1,0 +1,24 @@
+{
+  "name": "gs-random-password-generator",
+  "version": "1.0.0",
+  "description": "Generate random password ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gopi-saravanan/gopi-npm-package-rng.git"
+  },
+  "keywords": [
+    "generate",
+    "random",
+    "password"
+  ],
+  "author": "gopi saravanan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gopi-saravanan/gopi-npm-package-rng/issues"
+  },
+  "homepage": "https://github.com/Gopi-saravanan/gopi-npm-package-rng#readme"
+}
