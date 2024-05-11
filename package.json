@@ -1,5 +1,5 @@
 {
-  "name": "gs-random-password-generator",
+  "name": "@Gopi-saravanan/gs-random-password-generator",
   "version": "1.0.0",
   "description": "Generate random password ",
   "main": "index.js",
