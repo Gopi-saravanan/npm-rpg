@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Gopi-saravanan/gopi-npm-package-rng.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "generate",
     "random",
