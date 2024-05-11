@@ -1,21 +1,22 @@
-name: "publish npm"
+name: Publish Package
 
-on: push
+on:push
 
 jobs:
-    publish:
-        runs-on: ubuntu-latest
-        steps:
-            - name: checkout
-              uses: actions/checkout@v2
-            - name: node
-              uses: actions/setup-node@v2
-              with:
-                  node-version: 20
+  publish:
+    name: Publish to GitHub Packages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-            - name: Authenticate with GitHub NPM package repository
-              run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.PUBLISH_NPM_TOKEN }}" >> ~/.npmrc
-            - name: publish
-              run: npm publish --access public
-              working-directory: .
-    
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      - name: Authenticate with GitHub NPM package repository
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.PUBLISH_NPM_TOKEN }}" >> ~/.npmrc
+
+      - name: Publish to GitHub
+        run: npm publish
